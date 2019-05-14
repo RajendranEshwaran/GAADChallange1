@@ -1,6 +1,7 @@
 package com.gomathi.gaadchallange2;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -23,6 +26,9 @@ public class ProductListActivity extends AppCompatActivity {
     public ArrayList<String> productList;
     public ListView listView;
     public ArrayAdapter arrayAdapter;
+
+    public EditText locationTxt;
+    public Button showLocBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +51,9 @@ public class ProductListActivity extends AppCompatActivity {
         productList.add("Banana");
 
         listView = (ListView)findViewById(R.id.productListView);
+        locationTxt = (EditText)findViewById(R.id.editText);
+        showLocBtn = (Button)findViewById(R.id.button2);
+
         arrayAdapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,productList);
         listView.setAdapter(arrayAdapter);
 
@@ -65,6 +74,21 @@ public class ProductListActivity extends AppCompatActivity {
 
     }
 
+    public void showLocation(View view)
+    {
+        String string = locationTxt.getText().toString();
+        Uri uri = Uri.parse("geo:0,0?q="+string);
+        Intent intent = new Intent(Intent.ACTION_VIEW,uri);
+
+        if(intent.resolveActivity(getPackageManager()) != null)
+        {
+            startActivity(intent);
+        }
+        else
+        {
+            Log.d("Intent", "Cannot Manage It");
+        }
+    }
 
     /**
      * This hook is called whenever an item in your options menu is selected.

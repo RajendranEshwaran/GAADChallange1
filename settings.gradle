@@ -1,1 +1,1 @@
-include ':app', ':gaadchallange2', ':implicitintent_googleaad_challange3'
+include ':app', ':gaadchallange2', ':implicitintent_googleaad_challange3', ':implicitintentreceive_googleaad_challange4'
