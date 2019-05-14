@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ImplicitIntent_GoogleAAD_Challange3</string>
+    <string name="websiteAddress">http://www.ready4games.com</string>
+    <string name="locationName">Malvern</string>
+    <string name="shareText">Hi!! Welcome to Malvern</string>
+</resources>
