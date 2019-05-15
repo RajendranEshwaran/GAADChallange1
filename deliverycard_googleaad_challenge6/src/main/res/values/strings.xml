@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Deliverycard_googleaad_challenge6</string>
+    <string name="choose_delivery_method">Choose Delivery Method:</string>
+    <string name="same_day_messanger_service">Same day messanger service</string>
+    <string name="next_day_ground_delivery">Next day ground delivery</string>
+    <string name="pickup">Pickup</string>
+</resources>

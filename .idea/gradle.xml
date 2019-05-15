@@ -9,6 +9,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/deliverycard_googleaad_challenge6" />
             <option value="$PROJECT_DIR$/gaadchallange2" />
             <option value="$PROJECT_DIR$/implicitintent_googleaad_challange3" />
             <option value="$PROJECT_DIR$/implicitintentreceive_googleaad_challange4" />
