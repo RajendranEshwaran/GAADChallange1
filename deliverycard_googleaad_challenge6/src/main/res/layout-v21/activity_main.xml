@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginRight="164dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="showMap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/star_on" />
+
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:onClick="gotoDeliveryActivity"
+        android:layout_width="382dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="344dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/biriyani" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:onClick="gotoDeliveryActivity"
+        android:layout_width="382dp"
+        android:layout_height="149dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fish" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:onClick="gotoDeliveryActivity"
+        android:layout_width="382dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lollypop" />
+</android.support.constraint.ConstraintLayout>
