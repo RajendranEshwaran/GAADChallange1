@@ -1,1 +1,1 @@
-include ':app', ':gaadchallange2', ':implicitintent_googleaad_challange3', ':implicitintentreceive_googleaad_challange4', ':keyboardentities_googleaad_challange5', ':deliverycard_googleaad_challenge6'
+include ':app', ':gaadchallange2', ':implicitintent_googleaad_challange3', ':implicitintentreceive_googleaad_challange4', ':keyboardentities_googleaad_challange5', ':deliverycard_googleaad_challenge6', ':toptabbar_googleaad_challange7', ':navigation_drawer_googleaad_challange8', ':recycleview_gogleaad_challange9'

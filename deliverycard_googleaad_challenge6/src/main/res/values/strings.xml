@@ -4,4 +4,5 @@
     <string name="same_day_messanger_service">Same day messanger service</string>
     <string name="next_day_ground_delivery">Next day ground delivery</string>
     <string name="pickup">Pickup</string>
+    <string name="location">geo:37.422114,-112.087644?z=12</string>
 </resources>

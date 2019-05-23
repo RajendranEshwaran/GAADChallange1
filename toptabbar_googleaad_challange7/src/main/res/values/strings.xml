@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TopTabbar_GoogleAAD_Challange7</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Cooking">Hello Cooking fragment</string>
+    <string name="TechNews">Hello TechNews fragment</string>
+    <string name="TopStories">Hello TopStories fragment</string>
+    <string name="Tab1">Top Stories</string>
+    <string name="Tab2">Tech News</string>
+    <string name="Tab3">Cooking</string>
+</resources>

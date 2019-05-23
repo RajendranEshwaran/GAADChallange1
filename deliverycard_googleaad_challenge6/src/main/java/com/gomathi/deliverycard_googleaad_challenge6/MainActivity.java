@@ -1,8 +1,11 @@
 package com.gomathi.deliverycard_googleaad_challenge6;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.annotation.VisibleForTesting;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +17,8 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 import android.widget.Toolbar;
 
+import java.net.URI;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String LOG_TAG = MainActivity.class.getSimpleName();
@@ -21,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton imageButton1;
     ImageButton imageButton2;
     ImageButton imageButton3;
+    FloatingActionButton floatingActionButton;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
@@ -31,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         imageButton1 = (ImageButton)findViewById(R.id.imageButton);
         imageButton2 = (ImageButton)findViewById(R.id.imageButton2);
         imageButton3 = (ImageButton)findViewById(R.id.imageButton3);
+    floatingActionButton =(FloatingActionButton)findViewById(R.id.floatingActionButton);
+
 
 
     }
@@ -94,6 +102,26 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(MainActivity.this,DeliveryMethodActivity.class);
         startActivity(intent);
+    }
+
+    // Mar:- Display the map view
+
+    public void showMap(View view)
+    {
+        String string = getString(R.string.location);
+        Uri uri = Uri.parse(string);
+
+        Intent intent = new Intent();
+        intent.setAction(Intent.ACTION_VIEW);
+        intent.setData(uri);
+
+        if(intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);
+        }
+        else
+        {
+            Log.d("Intent Error", "Cant able to control");
+        }
     }
     @Override
     protected void onStart() {
